@@ -1,0 +1,21 @@
+.filme-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+} 
+
+.filme-card-img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.filme-card-img:hover {
+    transform: scale(1.05);
+}
+
+.filme-card-title {
+    font-size: 18px;
+    text-align: center;
+}
