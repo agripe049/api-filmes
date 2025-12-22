@@ -1,10 +1,9 @@
-import React from 'react'
 import './FilmeCard.css'
 import { Link } from 'react-router-dom';
 import semImagem from '../../../public/semImagem.png'
 
 function FilmeCard({ filme }) {
-  return (
+  return ( 
     <div className='filme-card'>
       <Link to={`/filme/${filme.id}`}>
         <img 

@@ -16,11 +16,13 @@ function Filme() {
       const data = await response.json();
 
       setFilme(data);
+      
     }
     carregarFilme();
   }, [id]);
 
   if (!filme) return <p>Carregando...</p>;
+  const ano = filme.release_date?.slice(0, 4);
 
   return (
     <div className='filme-container'>
@@ -31,6 +33,7 @@ function Filme() {
       /> 
       <div className='filme-info'>
         <h1>{filme.title}</h1>
+        {ano && <span>{ano}</span>}
         <p>{filme.overview}</p>
 
         <Link to="/">

@@ -27,6 +27,8 @@ function FilmesPopulares() {
             }
 
             const data = await response.json();
+             console.log(data.results)  
+
             setFilmes(data.results);
         } catch (err) {
             setError(err.message)
@@ -37,7 +39,7 @@ function FilmesPopulares() {
 
 
     async function buscarFilmes(query) {
-        if (!query) return;
+        if (!query || query.length < 3) return;
 
         try {
             setLoading(true);
@@ -52,6 +54,7 @@ function FilmesPopulares() {
             }
 
             const data = await response.json();
+
             setFilmes(data.results);
         } catch (err) {
             setError(err.message);
@@ -60,17 +63,18 @@ function FilmesPopulares() {
         }
     }
 
-    { loading && <p className="loading">Carregando filmes...</p> }
-    { error && <p className="erro">{error}</p> }
-
     return (
         <div>
-            <h1>{buscando ? "Resultados da busca" : "Filmes Populares"}</h1>
-            <Search onSearch={buscarFilmes} />
+            <h1>{buscando ? "Resultados da busca" : "Filmes Lançamentos"}</h1>
+
+            <Search buscarFilmes={buscarFilmes} />
+
+            {loading && <p className="loading">Carregando filmes...</p>}
+            {error && <p className="erro">{error}</p>}
 
 
             <div className='filmes-container'>
-                {!loading &&
+                {!loading && !error &&
                     filmes.map((filme) => (
                         <FilmeCard key={filme.id} filme={filme} />
                     ))}
@@ -80,3 +84,8 @@ function FilmesPopulares() {
 }
 
 export default FilmesPopulares;
+
+
+// Tirar o botão de buscar, e ao digitar na barra de pesquisa já pesquisar
+//Acrescentar o ano de lançamento, duração do filme talvez
+// melhorar um pouco esse css
