@@ -1,10 +1,11 @@
 .filme-container {
     display: flex;
     gap: 30px;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .filme-poster {
+    width: 350px;
     border-radius: 10px;
 }
 
@@ -19,7 +20,7 @@
     background-color: #fff;
     color: #000;
     border: none;
-    border-radius: 6px;
+    border-radius: 6px; 
     cursor: pointer;
 }
 
