@@ -86,6 +86,4 @@ function FilmesPopulares() {
 export default FilmesPopulares;
 
 
-// Tirar o botão de buscar, e ao digitar na barra de pesquisa já pesquisar
-//Acrescentar o ano de lançamento, duração do filme talvez
-// melhorar um pouco esse css
+// fazer barra de busca no header, e finalizar projeto para postar

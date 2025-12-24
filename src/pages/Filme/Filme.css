@@ -6,22 +6,43 @@
 
 .filme-poster {
     width: 350px;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .filme-info {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
+    max-width: 600px;
+}
+
+.filme-info h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.filme-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #aaa;
+    font-size: 14px;
 }
 
 .btn-voltar {
-    padding: 10px 16px;
+    margin-top: 20px;
+    padding: 10px 18px;
     background-color: #fff;
     color: #000;
     border: none;
     border-radius: 6px; 
     cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-voltar:hover {
+    opacity: 0.9;
 }
 
 .loading {

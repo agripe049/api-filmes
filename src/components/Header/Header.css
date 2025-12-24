@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #000;
+    border-bottom: 2px solid #222;
+    margin-bottom: 30px;
+}
+
+.header h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.logo span {
+    color: #2bff00;
+}

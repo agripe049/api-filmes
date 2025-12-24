@@ -34,11 +34,17 @@ function Filme() {
         src={`https://image.tmdb.org/t/p/w500${filme.poster_path}`}
         alt={filme.title}
         className='filme-poster'
-      /> 
+      />
+
       <div className='filme-info'>
         <h1>{filme.title}</h1>
-        {ano && <span>{ano}</span>}
-        <p>{formatarDuracao(filme.runtime)}</p>
+
+        <div className='filme-meta'>
+          {ano && <span>{ano}</span>}
+          <span>{formatarDuracao(filme.runtime)}</span>
+        </div>
+
+
         <p>{filme.overview}</p>
 
         <Link to="/">
