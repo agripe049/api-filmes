@@ -1,4 +1,4 @@
-.header {
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,12 +8,15 @@
     margin-bottom: 30px;
 }
 
-.header h1{
+.header-container h1{
     font-size: 32px;
     font-weight: 700;
     color: #fff;
 }
 
-.logo span {
-    color: #2bff00;
+.header-container input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
 }
