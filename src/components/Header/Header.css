@@ -6,17 +6,36 @@
     background-color: #000;
     border-bottom: 2px solid #222;
     margin-bottom: 30px;
+    gap: 20px;
 }
-
+ 
 .header-container h1{
     font-size: 32px;
     font-weight: 700;
     color: #fff;
+    white-space: nowrap;
 }
 
 .header-container input{
     width: 300px;
-    padding: 10px;
+    padding: 10px 12px;
     border-radius: 6px;
     border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+    .header-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+    }
+    .header-container h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .header-container input {
+        width: 100%;
+    }
 }

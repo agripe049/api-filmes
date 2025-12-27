@@ -9,7 +9,7 @@ function Header({ onSearch }) {
     setTexto(valor);
     onSearch(valor);
   }
-
+ 
   return (
     <header className="header-container">
       <h1>Cine Pot</h1>
@@ -25,3 +25,5 @@ function Header({ onSearch }) {
 }
 
 export default Header;
+
+// FAZER CSS MOBILE, PARA POSTAR

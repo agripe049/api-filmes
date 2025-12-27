@@ -3,19 +3,37 @@
     flex-direction: column;
     gap: 10px;
     margin-top: 40px;
+    cursor: pointer;
 } 
 
 .filme-card-img {
     width: 100%;
-    border-radius: 8px;
-    transition: transform 0.2s ease;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.filme-card-img:hover {
+.filme-card-img:hover { 
     transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
 .filme-card-title {
     font-size: 18px;
     text-align: center;
+    color: #fff;
+    line-height: 1.3;
+}
+
+@media screen and (max-width: 768px) {
+    .filme-card {
+        max-width: 130px;
+        margin-top: 20px;
+    }
+    .filme-card-img {
+        width: 100%;
+    }
+
+    .filme-card-title {
+        font-size: 14px;
+    }
 }

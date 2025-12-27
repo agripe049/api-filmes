@@ -7,7 +7,7 @@ function FilmeCard({ filme }) {
     <div className='filme-card'>
       <Link to={`/filme/${filme.id}`}>
         <img 
-          src={
+          src={ 
             filme.poster_path
             ? `https://image.tmdb.org/t/p/w200${filme.poster_path}`
             : '/semImagem.png'} 
