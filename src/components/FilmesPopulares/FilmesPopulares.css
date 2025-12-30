@@ -6,10 +6,18 @@
 }
 
 .loading {
-  margin-top: 20px;
+  margin-top: 20px; 
 }
 
 .erro {
   margin-top: 20px;
   color: red;
+}
+
+@media screen and (max-width: 600px){
+    .filmes-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 0 10px;
+    }
 }

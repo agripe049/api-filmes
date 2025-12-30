@@ -45,12 +45,12 @@ function Filme() {
         </div>
 
 
-        <p>{filme.overview}</p>
+        <p className='filme-overview'>{filme.overview}</p>
 
         <Link to="/">
           <button className='btn-voltar'>Voltar</button>
         </Link>
-      </div>
+      </div> 
     </div>
   )
 }

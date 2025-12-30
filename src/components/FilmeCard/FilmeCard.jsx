@@ -17,7 +17,7 @@ function FilmeCard({ filme }) {
       </Link>
       <h3 className='filme-card-title'>{filme.title}</h3>
     </div>
-  ); 
+  );  
 }
 
 export default FilmeCard;
