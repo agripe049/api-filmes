@@ -31,8 +31,6 @@ O projeto faz parte do meu processo de evolução como desenvolvedor **Front-end
 
 ## 📷 Preview
 
-> Em breve imagens ou link do projeto publicado
->
 > **Home**
 > <img width="1920" height="918" alt="Home" src="https://github.com/user-attachments/assets/5d1cb8fc-202b-4632-9777-fe9b7ae55201" />
 
