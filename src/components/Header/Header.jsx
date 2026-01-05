@@ -26,4 +26,4 @@ function Header({ onSearch }) {
 
 export default Header;
 
-// FAZER CSS MOBILE, PARA POSTAR
+
