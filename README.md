@@ -56,6 +56,11 @@ Neste projeto aprimorei:
 
 ---
 
+🔗 **Acesse a aplicação:**
+https://api-filmes.vercel.app
+
+---
+
 ## 🧑‍💻 Autor
 
 Desenvolvido por **Matheus Mendes**
